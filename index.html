@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+
+    <!-- icon of the website at the top of the browser tab (only change after the domain = ) -->
+    <!-- <link rel="icon" type="image/png" href="https://www.google.com/s2/u/0/favicons?domain=google.com"> -->
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="quoteIcon"><i class="fa-solid fa-quote-left"></i></div>
+        <div class="copy" onclick="Copy()">
+            <i class="fa-regular fa-copy"></i>
+            <span class="tooltip hidden">copied!</span>
+        </div>
+        <div class="quoteContainer">
+            <h1 id="quote"></h1>
+            <h4 id="author"></h4>
+        </div>
+
+        <!-- loader -->
+        <div class="loader hide">
+            <div class="loader__circle"></div>
+            <div class="loader__circle"></div>
+            <div class="loader__circle"></div>
+            <div class="loader__circle"></div>
+            <div class="loader__circle"></div>
+        </div>
+        <div class="buttons">
+            <button class="twitterBtn" onclick="ShareViaTwitter()"><i class="fa-brands fa-x-twitter"></i></button>
+            <button class="generateBtn" onclick="Generate()">Next</button>
+        </div>
+    </div>
+
+    <!-- script -->
+    <script src="script.js"></script>
+
+</body>
+</html>
